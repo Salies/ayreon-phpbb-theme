@@ -71,4 +71,4 @@ Before finishing, **there are a few things you should be aware of!**
  ## Credits
 The name "Ayreon" came from the progressive metal project by the dutch musician Arjen Anthony Lucassen. The default background stands for the cover of his "Into The Eletric Castle" album. So, thanks Arjen for the awesome inspiration!
  
-I'd like to also László Kozma for his *recent widget* code, 'cause I used his http request model to come up with my Recent Posts widget.
+I'd like to also thank László Kozma for his *recent widget* code, 'cause I used his http request model to come up with my Recent Posts widget.
