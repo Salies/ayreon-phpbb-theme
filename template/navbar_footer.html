@@ -1,0 +1,57 @@
+<div class="navbar" role="navigation">
+<div class="ay_footer">
+<div class="ay_innerfoot">
+<div class="ay_columnfoot">
+<aside><i class="fa fa-info-circle" aria-hidden="true"></i> {AY_ABOUT}</aside>
+Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Quem num gosta di mé, boa gentis num é. Casamentiss faiz malandris se pirulitá.
+Diuretics paradis num copo é motivis de denguis. Pra lá , depois divoltis porris, paradis. Depois divoltis porris, paradis.
+</div>
+<div class="ay_columnfoot">
+<aside><i class="fa fa-link" aria-hidden="true"></i> {AY_USEFUL}</aside>
+		<!-- IF U_CONTACT_US -->
+				<a href="{U_CONTACT_US}" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>{L_CONTACT_US}</span>
+				</a>
+		<!-- ENDIF -->
+		<br>
+		<!-- IF U_TEAM -->
+				<a href="{U_TEAM}" role="menuitem">
+					<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>{L_THE_TEAM}</span>
+				</a>
+		<!-- ENDIF -->
+		<br>
+		<!-- IF S_DISPLAY_MEMBERLIST -->
+				<a href="{U_MEMBERLIST}" title="{L_MEMBERLIST_EXPLAIN}" role="menuitem">
+					<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>{L_MEMBERLIST}</span>
+				</a>
+		<!-- ENDIF -->
+		<br>
+		<!-- IF not S_IS_BOT -->
+				<a href="{U_DELETE_COOKIES}" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>{L_DELETE_COOKIES}</span>
+				</a>
+		<!-- ENDIF -->
+		<br><br>
+		{S_TIMEZONE}
+</div>
+<div class="ay_columnfoot">
+<aside><i class="fa fa-cog" aria-hidden="true"></i> {AY_CREDITS}</aside>
+{AY_NAMECRED} 		<!-- EVENT overall_footer_copyright_prepend -->
+		{CREDIT_LINE}
+		<!-- IF TRANSLATION_INFO -->{TRANSLATION_INFO}<!-- ENDIF -->
+		<!-- EVENT overall_footer_copyright_append -->
+		<!-- IF DEBUG_OUTPUT -->{DEBUG_OUTPUT}<!-- ENDIF -->
+		<!-- IF U_ACP --><strong><a href="{U_ACP}">{L_ACP}</a></strong><!-- ENDIF -->
+</div>
+</div>
+</div>
+
+<div class="ay_mob_footer">
+{AY_NAMECRED} <br>		<!-- EVENT overall_footer_copyright_prepend -->
+		{CREDIT_LINE}
+		<!-- IF TRANSLATION_INFO -->{TRANSLATION_INFO}<!-- ENDIF -->
+		<!-- EVENT overall_footer_copyright_append -->
+		<!-- IF DEBUG_OUTPUT -->{DEBUG_OUTPUT}<!-- ENDIF -->
+		<!-- IF U_ACP --><strong><a href="{U_ACP}">{L_ACP}</a></strong><!-- ENDIF -->
+</div>
+</div>

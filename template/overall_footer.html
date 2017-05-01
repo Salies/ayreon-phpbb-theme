@@ -1,0 +1,66 @@
+		</div>
+		<!-- EVENT overall_footer_content_after -->
+	</div>
+
+<!-- EVENT overall_footer_page_body_after -->
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<!-- INCLUDE navbar_footer.html -->
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+</div>
+
+<script type="text/javascript" src="{T_JQUERY_LINK}"></script>
+<!-- IF S_ALLOW_CDN --><script type="text/javascript">window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
+<script type="text/javascript" src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
+<!-- INCLUDEJS forum_fn.js -->
+<!-- INCLUDEJS ajax.js -->
+<!-- IF S_ALLOW_CDN -->
+	<script type="text/javascript">
+		(function($){
+			var $fa_cdn = $('head').find('link[rel="stylesheet"]').first(),
+				$span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+			if ($span.css('fontFamily') !== 'FontAwesome' ) {
+				$fa_cdn.after('<link href="{T_ASSETS_PATH}/css/font-awesome.min.css" rel="stylesheet">');
+				$fa_cdn.remove();
+			}
+			$span.remove();
+		})(jQuery);
+	</script>
+<!-- ENDIF -->
+
+<!-- IF S_COOKIE_NOTICE -->
+	<script src="{T_ASSETS_PATH}/cookieconsent/cookieconsent.min.js?assets_version={T_ASSETS_VERSION}"></script>
+	<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#0F538A"
+					},
+					"button": {
+						"background": "#E5E5E5"
+					}
+				},
+				"theme": "classic",
+				"content": {
+					"message": "{LA_COOKIE_CONSENT_MSG}",
+					"dismiss": "{LA_COOKIE_CONSENT_OK}",
+					"link": "{LA_COOKIE_CONSENT_INFO}"
+				}
+			})});
+	</script>
+<!-- ENDIF -->
+
+<!-- EVENT overall_footer_after -->
+
+<!-- IF S_PLUPLOAD --><!-- INCLUDE plupload.html --><!-- ENDIF -->
+{$SCRIPTS}
+
+<!-- EVENT overall_footer_body_after -->
+
+</body>
+</html>
