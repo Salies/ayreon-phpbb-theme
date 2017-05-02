@@ -60,7 +60,7 @@ Before finishing, **there are a few things you should be aware of!**
 
 **2.** You might want to make a few adjustments to the Share social links. Be sure to keep the widgets into the divs to keep them centered.
 
-**3.** **THE RECENT POSTS WIDGET SHOW POSTS FROM EVERY FORUM**. So, if you have a moderation area or something similar, be sure to add it as an exception on the query. To do so, find that on the *recent.php* file:
+**3.** **THE RECENT POSTS WIDGET SHOWS POSTS FROM EVERY FORUM**. So, if you have a moderation area or something similar, be sure to add it as an exception on the query. To do so, find that on the *recent.php* file:
 ```php
  and phpbb_posts.topic_id=phpbb_topics.topic_id and phpbb_posts.forum_id != 0 and phpbb_posts.poster_id=phpbb_users.user_id order by post_time desc
  ```
